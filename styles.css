@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: #fff;
+}
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ABOVE */
+
+.above {
+    width: 39.688rem;
+    height: 13.75rem;
+    background-color: var(--white);
+    border-radius: 0.688rem 0.688rem 0 0;
+    padding: 3.25rem;
+}
+
+.title {
+    color: var(--cyan);
+}
+
+.days {
+    margin-top: 1rem;
+    color: var(--bright-yellow);
+}
+
+.desc {
+    margin-top: 1rem;
+    color: var(--grayish-blue);
+}
+
+/* BELOW */
+
+.bellow {
+    display: flex;
+    width: 39.688rem;
+    height: 13.75rem;
+    background-color: var(--cyan);
+    border-radius: 0 0 0.688rem 0.688rem;
+}
+
+/* BELOW -- RIGHT*/
+
+.right {
+    background-color: #4bbfbd;
+    width: 39.688rem;
+    height: 13.75rem;
+    border-radius: 0 0 0.688rem 0;
+    color: var(--white);
+    padding: 1.5rem 2.438rem;
+}
+
+ul {
+    margin-top: .8rem;
+}
+
+li {
+    font-size: 0.938rem;
+}
+
+/* BELOW -- LEFT*/
+
+.left {
+    color: var(--white);
+    width: 39.688rem;
+    height: 13.75rem;
+    border-radius: 0 0 0 0.688rem;
+    padding: 1.5rem 2.438rem;
+}
+
+.month {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.per {
+    color: var(--light-gray);
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 14.813rem;
+    height: 3rem;
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: .75rem;
+    color: var(--white);
+    font-weight: bold;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+@media (max-width: 645px) {
+
+    .above {
+        width: 19.375rem;
+        height: 16.75rem;
+        border-radius: 0px;
+        padding: 1.938rem 1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .days {
+        font-size: 1.2rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    .bellow {
+        height: 28.563rem;
+        width: 19.438rem;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        height: 28.563rem;
+        width: 19.438rem;
+    }
+
+    .right {
+        height: 28.563rem;
+        width: 19.438rem;
+    }
+}
